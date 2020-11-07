@@ -1,7 +1,6 @@
 const { model } = require('mongoose');
 const musicas = require('../models/musicasSchema')
 
-
 const getMusicas = (req, res) => {
     console.log(req.url);
     musicas.musicasCollection.find((error, musics) => {
